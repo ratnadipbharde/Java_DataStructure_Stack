@@ -12,5 +12,11 @@ public class Main {
         myStack.push(mySecondNode);
         myStack.push(myThirdNode);
         myStack.printMyStack();
+        INode a=myStack.peak();
+        System.out.println("Peak: "+a);
+        myStack.printMyStack();
+        myStack.pop();
+        System.out.println("after pop() method...");
+        myStack.printMyStack();
     }
 }

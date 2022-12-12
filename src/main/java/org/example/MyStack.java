@@ -7,8 +7,15 @@ public class MyStack {
         this.myLinkList = new MyLinkList();
     }
 
+    public INode peak() {
+        return myLinkList.getHead();
+    }
+
+    public INode pop() {
+        return myLinkList.pop();
+    }
+
     public void push(INode myNode) {
-        System.out.println("My Stack" + " ");
         myLinkList.add(myNode);
     }
 
