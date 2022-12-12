@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="LinkList" />
         <module name="Java-Data_Structure-LinkedList" />
+        <module name="Java_Data_Structure_Stack" />
       </profile>
     </annotationProcessing>
   </component>

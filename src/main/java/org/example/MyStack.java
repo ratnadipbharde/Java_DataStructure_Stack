@@ -3,6 +3,14 @@ package org.example;
 public class MyStack {
     private final MyLinkList myLinkList;
 
+    public Integer getSize() {
+        return myLinkList.getSize();
+    }
+
+    public boolean isEmpty() {
+        return myLinkList.isEmpty();
+    }
+
     public MyStack() {
         this.myLinkList = new MyLinkList();
     }

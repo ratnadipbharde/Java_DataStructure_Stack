@@ -12,11 +12,15 @@ public class Main {
         myStack.push(mySecondNode);
         myStack.push(myThirdNode);
         myStack.printMyStack();
-        INode a=myStack.peak();
-        System.out.println("Peak: "+a);
-        myStack.printMyStack();
+        INode a = myStack.peak();
+        System.out.println("Peak: " + a);
         myStack.pop();
-        System.out.println("after pop() method...");
         myStack.printMyStack();
+        if (myStack.isEmpty()) {
+            System.out.println("empty");
+        }else {
+            System.out.println("not empty");
+        }
+        System.out.println("Stack Size is : "+myStack.getSize());
     }
 }

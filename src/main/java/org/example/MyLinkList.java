@@ -12,7 +12,15 @@ public class MyLinkList<K> {
         return tail;
     }
 
-    public Integer getSize(){
+    public boolean isEmpty() {
+        if (this.head == null && this.tail == null) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public Integer getSize() {
         INode tempNode = this.head;
         Integer count = 0;
         while (tempNode != null) {
@@ -42,7 +50,7 @@ public class MyLinkList<K> {
         while (tempNode != null) {
             INode<K> current = tempNode;
             if (key == current.getKey()) {
-               return true;
+                return true;
             }
             tempNode = current.getNext();
         }
@@ -54,7 +62,8 @@ public class MyLinkList<K> {
         this.head = head.getNext();
         return tempNode;
     }
-    public void remove(){
+
+    public void remove() {
 
     }
 
