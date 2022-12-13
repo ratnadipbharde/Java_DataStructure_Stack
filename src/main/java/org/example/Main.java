@@ -12,5 +12,7 @@ public class Main {
         myQueue.enQueue(mySecondNode);
         myQueue.enQueue(myThirdNode);
         myQueue.printMyQueue();
+        myQueue.deQueue();
+        myQueue.printMyQueue();
     }
 }

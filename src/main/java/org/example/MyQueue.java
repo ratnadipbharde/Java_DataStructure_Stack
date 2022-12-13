@@ -7,9 +7,13 @@ public class MyQueue {
         this.myLinkList =new MyLinkList<Integer>();
     }
 
+    public void deQueue(){
+        myLinkList.removeFirst();
+    }
     public void enQueue(MyNode<Integer> myFirstNode) {
         myLinkList.append(myFirstNode);
     }
+
 
     public void printMyQueue(){
        myLinkList.printMyNodes("Queue : ");

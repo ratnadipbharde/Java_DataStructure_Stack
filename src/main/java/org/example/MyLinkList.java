@@ -57,14 +57,20 @@ public class MyLinkList<K> {
         return false;
     }
 
-    public INode<K> pop() {
+    public INode<K> removeFirst() {
         INode<K> tempNode = this.head;
         this.head = head.getNext();
         return tempNode;
     }
 
-    public void remove() {
-
+    public void removeLast() {
+        INode tempNode = this.head;
+        while (tempNode!=null){
+            if (tempNode.getNext()==tail){
+                tempNode.setNext(null);
+            }
+            tempNode=tempNode.getNext();
+        }
     }
 
     public void add(INode<K> newNode) {

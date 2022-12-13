@@ -19,8 +19,8 @@ public class MyStack {
         return myLinkList.getHead();
     }
 
-    public INode pop() {
-        return myLinkList.pop();
+    public void pop() {
+        myLinkList.removeLast();
     }
 
     public void push(INode myNode) {
