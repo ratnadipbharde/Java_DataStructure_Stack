@@ -90,8 +90,8 @@ public class MyLinkList<K> {
         this.tail = newNode;
     }
 
-    public void printMyNodes() {
-        StringBuffer myNodes = new StringBuffer("My Nodes : ");
+    public void printMyNodes(String item) {
+        StringBuffer myNodes = new StringBuffer(item);
         INode tempNode = head;
         while (tempNode.getNext() != null) {
             myNodes.append(tempNode.getKey());
@@ -102,13 +102,5 @@ public class MyLinkList<K> {
         myNodes.append(tempNode.getKey());
         System.out.println(myNodes);
     }
-
-//    @Override
-//    public String toString() {
-//        return "MyLinkList{" +
-//                "head=" + head +
-//                ", tail=" + tail +
-//                '}';
-//    }
 }
 

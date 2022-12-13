@@ -1,7 +1,11 @@
 package org.example;
 
 public class MyStack {
+
     private final MyLinkList myLinkList;
+    public MyStack() {
+        this.myLinkList = new MyLinkList();
+    }
 
     public Integer getSize() {
         return myLinkList.getSize();
@@ -9,10 +13,6 @@ public class MyStack {
 
     public boolean isEmpty() {
         return myLinkList.isEmpty();
-    }
-
-    public MyStack() {
-        this.myLinkList = new MyLinkList();
     }
 
     public INode peak() {
@@ -28,6 +28,6 @@ public class MyStack {
     }
 
     public void printMyStack() {
-        myLinkList.printMyNodes();
+        myLinkList.printMyNodes("Stack : ");
     }
 }
